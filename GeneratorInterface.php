@@ -19,9 +19,9 @@ use Klipper\Component\PdfGenerator\Exception\RuntimeException;
 interface GeneratorInterface
 {
     /**
-     * @throws RuntimeException
-     *
      * @return \SplFileInfo The generated file
+     *
+     * @throws RuntimeException
      */
     public function generate(string $originPath, ?string $targetPath = null, array $options = []): \SplFileInfo;
 }
